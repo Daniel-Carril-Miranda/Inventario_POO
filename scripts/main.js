@@ -1,5 +1,5 @@
 // Author: Daniel Carril Miradna (Student)
-// GitHub: 
+// GitHub: https://github.com/Daniel-Carril-Miranda/Inventario_POO.git
 
 import { Product } from './product.js';
 import { Inventory } from './inventory.js';
