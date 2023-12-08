@@ -1,0 +1,123 @@
+
+@font-face{
+    font-family: "Agbalumo";
+    src: url("/assets/fonts/Agbalumo-Regular.ttf") format("truetype");
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(151, 166, 240);
+    background: radial-gradient(circle, rgb(76, 171, 255)50%, rgb(147, 242, 254)100%); /* crea una difusión de color en el centro */
+}
+.inventory-table-styles{
+    border-collapse: collapse; /* El contenido de las celdas se junta */
+    width: 80%;
+    margin: 20px auto;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: large;
+    box-shadow: 5px 5px 50px 10px; /* El primero es a la derecha, el segundo hacia abajo, y el tercero es el difuminado */
+}
+.inventory-table-styles th, 
+.inventory-table-styles td {
+    border: 1px solid #000e5a;
+    padding: 8px;
+    text-align: center;
+    background-color: rgb(130, 255, 213);
+}
+.inventory-table-styles th{
+    font-family: Agbalumo;
+    background-color: #67eafb;
+    font-size: larger;
+}
+.inventory-table-styles td{
+    font-family: 'Courier New', Courier, monospace;
+}
+.inventory-table-styles tr:hover{
+    background-color: black;
+    color: rgb(245, 0, 0);
+    transform: scale(101%);
+}
+.product-form-styles{
+    background: rgb(121,9,102);
+    background: linear-gradient(90deg, rgba(121,9,102,1) 0%, rgb(49, 185, 124) 83%);
+    color: white;
+    display: flex;
+    padding: 20px;
+    gap:10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow: 5px 5px 50px 10px; /* El primero es a la derecha, el segundo hacia abajo, y el tercero es el difuminado */
+}
+.search-section{
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+label {
+    display: block; /* Con esto los elementos nunca van a cambiar de sitio aunque la página cambie de tamaño */
+    margin: 5px;
+    width: 10%;
+    padding: 10px;
+    border-radius: 3px;
+    color: rgb(0, 0, 0);
+    background-color: #bc8c1a;
+    outline: none;
+    font-size: large;
+}
+input{
+    display: block;
+    font-size: large;
+    width: 8%;
+    padding: 10px;
+    border-radius: 3px;
+    color: rgb(0, 0, 0);
+    background-color: #a9a69f;
+
+}
+button {
+    margin: 2px;
+    padding: 4px;
+    font-size: large;
+    background-color: #3523b8;
+    color: white;
+    border-radius: 5px;
+    &:hover{
+        cursor: pointer;
+    }
+    &:active{
+        transform: scale(90%);
+    }
+}
+.delAll{
+    margin: 2px;
+    padding: 10px;
+    font-size: larger;
+    background-color: #d72121;
+    color: rgb(255, 254, 254);
+    border-radius: 5px;
+    &:hover{
+        cursor: pointer;
+    }
+    &:active{
+        transform: scale(90%);
+    }
+}
+h1{
+    text-align: center;
+    font-family: Agbalumo; /* Aplico fuente Importada */
+    color: rgb(0, 0, 0);
+    display: block;
+    white-space: nowrap;
+    border-right: 3px solid;
+    width: 15ch;
+    animation: typing 2s steps(15), blink .5s infinite step-end alternate; /* Los steps son el número de caracteres */
+    overflow: hidden;
+}
+@keyframes typing {
+    from {width: 0;}
+}
+@keyframes blink {
+    50% { border-color: transparent;}
+}
